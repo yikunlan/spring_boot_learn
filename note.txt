@@ -1,0 +1,17 @@
+一、在IDEA里面新建spring boot的醒目：
+    1.打开IDEA,创建新项目，选择Spring Initializr；
+    2、添加配置：<dependency>
+                      <groupId>org.springframework.boot</groupId>
+                       <artifactId>spring-boot-starter-web</artifactId>
+                  </dependency>
+二、访问HTML文件(实例：TemplatesController.java)：
+    1、在pom里面添加配置：<dependency>
+                                <groupId>org.springframework.boot</groupId>
+                                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                 		   </dependency>
+     2、在项目目录：resources中新建“templates”文件夹，把HTML文件放入templates文件夹;
+     3、在application.yml里面配置上：spring:
+                                    thymeleaf:
+                                        prefix: classpath:/templates/
+     3、在controller里面只需要写入跟html一样的文件名作为返回值就可以，springboot会自己去关联，并返回给浏览器;
+     4、接口controller里面只能用@Controller标签来修饰cotroller类，不能使用@RestController来修饰

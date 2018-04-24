@@ -1,0 +1,4 @@
+spring:
+  #configration HTML
+  thymeleaf:
+    prefix: classpath:/templates/
