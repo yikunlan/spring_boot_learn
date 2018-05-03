@@ -37,13 +37,17 @@
 		</dependency>
 	</dependencies>
 
-
-
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--set the main class-->
+				<configuration>
+					<mainClass>
+						com.example.hyk.HykApplication
+					</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

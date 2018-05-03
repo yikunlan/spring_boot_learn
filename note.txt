@@ -15,3 +15,9 @@
                                         prefix: classpath:/templates/
      3、在controller里面只需要写入跟html一样的文件名作为返回值就可以，springboot会自己去关联，并返回给浏览器;
      4、接口controller里面只能用@Controller标签来修饰cotroller类，不能使用@RestController来修饰
+
+ 三、打包发布：
+    1、通过idea的maven试图来打包，调出maven的试图，在clean之后点击install，会在项目的同级目录中生成target文件夹
+    ，在target文件夹中有和项目同名的.jar包生成。
+    2、可以把生成的jar包拷贝到要发布的磁盘中，然后cmd进入到jar放的目录，执行命令：java -jar hyk-0.0.1.jar，
+    就可以运行发布项目了
