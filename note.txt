@@ -21,3 +21,4 @@
     ，在target文件夹中有和项目同名的.jar包生成。
     2、可以把生成的jar包拷贝到要发布的磁盘中，然后cmd进入到jar放的目录，执行命令：java -jar hyk-0.0.1.jar，
     就可以运行发布项目了
+    3、如果是都多环境的配置，进入jar放的目录之后，要执行命令：java -jar hyk-0.0.1.jar --spring.profiles.active=dev
